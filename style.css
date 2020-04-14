@@ -1,0 +1,43 @@
+.toppest-nav {
+    background: black;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    color: white;
+    width: 100%;
+    height: auto;
+}
+.sticky {
+    /* stcky prop */
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+}
+.sticky-nav {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background: white;
+}
+.sticky-bar-link {
+    width: 100%;
+    background: yellow;
+}
+
+
+.main-articles {
+    border: black 1px solid;
+    /* display: grid; */
+    /* grid????? */
+}
+.big-article {
+    width: 60%;
+    /* 60% of AVAILABLE space */
+    background: red;
+}
+.stacked-articles {
+    width: 40%;
+    /* of available space... */
+    background: blueviolet;
+}
