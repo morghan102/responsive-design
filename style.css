@@ -1,3 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+
 .toppest-nav {
     background: black;
     display: flex;
@@ -18,7 +29,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    background: white;
+    background: gray;
 }
 .sticky-bar-link {
     width: 100%;
@@ -28,16 +39,102 @@
 
 .main-articles {
     border: black 1px solid;
-    /* display: grid; */
-    /* grid????? */
+    display: grid;
+    grid-template-columns: 60% 40%;
 }
 .big-article {
-    width: 60%;
-    /* 60% of AVAILABLE space */
+    /* width: 60%; */
+    grid-column: 1 / 2 ;
     background: red;
 }
 .stacked-articles {
-    width: 40%;
-    /* of available space... */
+    /* width: 40%; */
+    grid-column: 2 / 3;
     background: blueviolet;
+}
+
+
+
+main {
+    border: black 1px solid;
+    margin: 0 5%;
+    display: flex;
+    flex-direction: column;
+}
+.latest-news {
+    width: 100%;
+    background: pink;
+    display: flex;
+    flex-direction: column;
+}
+.ln-body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.latest-fund {
+    background: orange;
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+}
+.lf-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+.article-categories {
+    background: lightblue;
+    margin-top: 5%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.latest-deals {
+    background: green;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+}
+.ld-body {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+
+}
+
+
+footer {
+    margin-top: 5%;
+    border: black 1px solid;
+    display: flex;
+    flex-direction: column;
+}
+.top-ftr {
+    background: gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+.btm-ftr {
+    background: darkkhaki;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
 }
