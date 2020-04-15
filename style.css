@@ -16,7 +16,7 @@ a {
     justify-content: left;
     color: white;
     width: 100%;
-    height: auto;
+    height: 30px;
 }
 .sticky {
     /* stcky prop */
@@ -29,11 +29,13 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
+    height: 60px;
     background: gray;
 }
 .sticky-bar-link {
     width: 100%;
     background: yellow;
+    height: 30px;
 }
 
 
@@ -41,6 +43,8 @@ a {
     border: black 1px solid;
     display: grid;
     grid-template-columns: 60% 40%;
+    height: 450px;
+    margin-bottom: 7%;
 }
 .big-article {
     /* width: 60%; */
@@ -52,12 +56,14 @@ a {
     grid-column: 2 / 3;
     background: blueviolet;
 }
-
+.top-stacker, btm-stacker {
+    border: black 1px dashed;
+}
 
 
 main {
     border: black 1px solid;
-    margin: 0 5%;
+    margin: 0 7%;
     display: flex;
     flex-direction: column;
 }
@@ -66,18 +72,29 @@ main {
     background: pink;
     display: flex;
     flex-direction: column;
+    height: 400px;
+    /* margin-bottom: 7%; */
 }
 .ln-body {
     display: grid;
+    grid-gap: 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr;
 }
+.ln-body div {
+    border: 1px black dashed;
+}
+
+
 
 .latest-fund {
     background: orange;
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+    margin-top: 7%;
+    /* margin-bottom: 7%; */
+    height: 250px;
+
 }
 .lf-body {
     display: grid;
@@ -87,17 +104,22 @@ main {
 
 .article-categories {
     background: lightblue;
-    margin-top: 5%;
+    margin-top: 7%;
+    /* margin-bottom: 7%; */
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 500px);
 }
+
+
 
 .latest-deals {
     background: green;
-    margin-top: 5%;
+    margin-top: 7%;
     display: flex;
     flex-direction: column;
+    height: 600px;
 }
 .ld-body {
     display: grid;
@@ -112,12 +134,14 @@ footer {
     border: black 1px solid;
     display: flex;
     flex-direction: column;
+    height: 260px;
 }
 .top-ftr {
     background: gray;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    height: 62%;
 }
 .social {
     display: flex;
@@ -136,5 +160,19 @@ footer {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    height: 38%;
+}
+
+
+@media all and (min-width:768px) and (max-width:1024px){
+
+    .toppest-nav {
+        display: none;
+        /* make it dissapear */
+    }
+}
+
+
+@media all and (max-width:767px){
 
 }
